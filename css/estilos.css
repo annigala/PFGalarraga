@@ -449,6 +449,13 @@ header {
   .serviciosMain div h3 {
     font-size: 1.4em;
   }
+  .card {
+    width: fit-content;
+  }
+  .serviciosMain div h3 {
+    text-align: center;
+    font-size: 1em;
+  }
   .serviciosMainGrid {
     display: inline-block;
     align-items: center;
