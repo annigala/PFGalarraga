@@ -1,0 +1,61 @@
+.tituloServicios {
+    color: $color-verde;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.mainServicios {
+    margin: 20px;
+    place-content: center;
+    place-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        'bloques carrusel';
+    height: 800px;
+
+
+    .col {
+        display: grid;
+        grid-area: bloques;
+        width: 180px;
+        margin: 40px;
+    }
+
+    .botonServicios {
+        color: $color-casi-blanco;
+        background-color: $color-verde;
+        border: none;
+        font-size: 1.2em;
+    }
+
+    .container {
+        color: $color-casi-blanco;
+    }
+
+    #carouselExampleIndicators {
+        display: grid;
+        grid-area: carrusel;
+    }
+
+
+    .boton-activo {
+        background-color: rgba(28, 121, 93, 0.336);
+        font-size: 1.5em;
+        font-weight: bold;
+        border: none;
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.315);
+        font-size: 1.1em;
+    }
+
+    .carousel-item img {
+        height: 540px;
+        width: 800px;
+        object-fit: cover;
+    }
+}

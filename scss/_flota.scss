@@ -1,0 +1,56 @@
+.tituloFlota{
+    text-align: center;
+    margin: 30px;
+    text-transform: uppercase;
+    color: $color-verde;
+    font-weight: bold;
+}
+.seccionFlota{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    place-content: center;
+    .card{
+        margin: 40px;
+        border: none;
+        background-color: rgba(28, 121, 93, 0.548);
+        color: $color-casi-blanco;
+    }
+
+    .divImgFlota{
+        display: grid;
+        place-content: center;
+    }
+
+    .autoFlota{
+        margin: 10px;
+        width: auto;
+        height: auto;
+    }
+
+    .card-body{
+        h2{
+            text-align: center;
+        }
+    }
+    
+    .flotaInfo{
+        display: grid;
+        grid-template-areas: 
+        'pasajeros equipaje';
+        grid-template-columns: 2fr;
+    }
+    
+    .itemUno{
+        grid-area: pasajeros;
+        img{
+            margin-left: 30px;
+        }
+    }
+
+    .itemDos{
+        grid-area: equipaje;
+        img{
+            margin-left: 30px;
+        }
+    }
+}

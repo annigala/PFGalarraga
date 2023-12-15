@@ -1,0 +1,116 @@
+.cajaContenedoraBanner {
+  width: auto;
+}
+
+.cajaImagenBanner {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.imagenBanner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.SpanSeccionTres {
+  object-fit: contain;
+  text-align: center;
+  color: $color-verde;
+  padding: 30px;
+  text-transform: uppercase;
+
+  h1 {
+    font-weight: bold;
+  }
+
+  .separador {
+    color: $color-gris-plata;
+  }
+
+  p {
+    font-size: 1.2em;
+    padding: 20px;
+    font-weight: 600;
+  }
+
+  button {
+    background-color: $color-verde;
+    border: none;
+    color: $color-casi-blanco;
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+
+    a {
+      text-decoration: none;
+      color: $color-casi-blanco;
+    }
+
+    &:hover {
+      background-color: $color-negro;
+    }
+  }
+}
+
+.servicioGrid {
+  background-color: $color-platinum;
+  display: grid;
+  place-content: center;
+}
+
+.serviciosMain {
+  object-fit: contain;
+  text-align: center;
+  height: 850px;
+  font-family: 'Gruppo', sans-serif;
+  color: $color-casi-blanco;
+
+  div {
+    padding-top: 30px;
+
+    h3 {
+      font-size: 2em;
+      color: $color-verde;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+
+.serviciosMainGrid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'bloqueUno bloqueDos';
+  padding: 30px;
+
+
+  .contenedorServicios {
+    padding: 30px;
+    display: grid;
+    place-items: center;
+
+    img {
+      width: 80%;
+      height: 620px;
+    }
+
+    ul {
+      font-size: 1.2em;
+      height: 600px;
+      list-style-type: lower-roman;
+
+      li {
+        @include listas;
+        background-color: rgba(28, 121, 93, 0.781);
+        width: 386px;
+        height: 200px;
+        margin: 4px;
+      }
+    }
+  }
+}

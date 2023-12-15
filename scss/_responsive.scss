@@ -1,0 +1,354 @@
+// pantalla pequeña
+
+@media (max-width:529px) {
+    body {
+        width: fit-content;
+    }
+
+    .listaNav ul li {
+        a {
+            font-size: 0.8em;
+            padding: 10px;
+
+            &:hover {
+                color: rgb(28, 121, 93);
+            }
+        }
+    }
+
+    .logoNav {
+        object-fit: fill;
+    }
+
+    .SpanSeccionTres {
+        h1 {
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        p {
+            font-size: 0.7em;
+            padding: 20px;
+            font-weight: 600;
+        }
+
+        button {
+            font-size: 0.8em;
+            width: 190px;
+            height: 40px;
+
+            &:hover {
+                background-color: $color-negro;
+            }
+        }
+    }
+
+    .serviciosMain {
+        div {
+            h3 {
+                text-align: center;
+                font-size: 1em;
+            }
+        }
+
+    }
+
+    .serviciosMainGrid {
+        display: inline-block;
+        align-items: center;
+        margin: 0;
+
+        .contenedorServicios {
+
+            img {
+                display: none;
+            }
+
+            ul {
+                font-size: 0.8em;
+                height: 600px;
+
+                li {
+                    text-align: center;
+                    object-fit: fill;
+                    @include listas;
+                    background-color: rgba(28, 121, 93, 0.781);
+                    width: 200px;
+                    height: 180px;
+                    margin: 40px;
+                }
+            }
+        }
+    }
+
+
+    .footerFlex {
+        height: fit-content;
+        width: fit-content;
+
+        img {
+            height: 50px;
+            display: grid;
+            place-content: center;
+        }
+
+        p {
+            margin-top: 18px;
+            margin-left: 50px;
+            font-size: 0.5em;
+            color: $color-casi-blanco;
+        }
+    }
+
+    .tituloServicios {
+        font-size: 1.1em;
+        margin-top: 50px;
+    }
+
+    .mainServicios {
+        margin: 20px;
+        grid-template-areas:
+            'carrusel carrusel';
+
+
+        .col {
+            display: none;
+        }
+
+        .botonServicios {
+            color: $color-casi-blanco;
+            background-color: $color-verde;
+            border: none;
+            font-size: 1.2em;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.315);
+            font-size: 1em;
+        }
+
+        .carousel-item img {
+            height: 540px;
+            width: 800px;
+            object-fit: cover;
+        }
+
+    }
+}
+
+
+
+
+// pantalla mediana
+
+@media (min-width:530px) and (max-width:768px) {
+
+    .logoNav {
+        object-fit: contain;
+    }
+
+    .SpanSeccionTres {
+        h1 {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        p {
+            font-size: 1em;
+            padding: 20px;
+            font-weight: 600;
+        }
+
+        button {
+            font-size: 0.8em;
+            width: 190px;
+            height: 40px;
+
+            &:hover {
+                background-color: $color-negro;
+            }
+        }
+    }
+
+    .serviciosMain {
+        div {
+            h3 {
+                font-size: 1.4em;
+            }
+        }
+
+    }
+
+    .serviciosMainGrid {
+        display: inline-block;
+        align-items: center;
+        margin: 0;
+
+        .contenedorServicios {
+
+            img {
+                display: none;
+            }
+
+            ul {
+                font-size: 1.2em;
+                height: 600px;
+                list-style-type: lower-roman;
+
+                li {
+                    object-fit: contain;
+                    @include listas;
+                    background-color: rgba(28, 121, 93, 0.781);
+                    width: 380px;
+                    height: 200px;
+                    margin: 4px;
+                }
+            }
+        }
+    }
+
+    .tituloServicios {
+        font-size: 1.3em;
+        margin-top: 50px;
+    }
+
+    .mainServicios {
+        margin: 20px;
+        grid-template-areas:
+            'carrusel carrusel';
+
+
+        .col {
+            display: none;
+        }
+
+        .botonServicios {
+            color: $color-casi-blanco;
+            background-color: $color-verde;
+            border: none;
+            font-size: 1.2em;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.315);
+        }
+
+        .carousel-item img {
+            height: 540px;
+            width: 800px;
+            object-fit: cover;
+        }
+
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+}
+
+
+// pantalla tablet
+@media (min-width:769px) and (max-width:991px) {
+
+    .logoNav {
+        object-fit: contain;
+    }
+
+    .SpanSeccionTres {
+        h1 {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        p {
+            font-size: 1em;
+            padding: 20px;
+            font-weight: 600;
+        }
+
+        button {
+            font-size: 0.8em;
+            width: 190px;
+            height: 40px;
+
+            &:hover {
+                background-color: $color-negro;
+            }
+        }
+    }
+
+    .serviciosMain {
+        div {
+            h3 {
+                font-size: 1.4em;
+            }
+        }
+
+    }
+
+    .serviciosMainGrid {
+        display: inline-block;
+        align-items: center;
+        margin: 0;
+
+        .contenedorServicios {
+
+            img {
+                display: none;
+            }
+
+            ul {
+                font-size: 1.2em;
+                height: 600px;
+                list-style-type: lower-roman;
+
+                li {
+                    object-fit: contain;
+                    @include listas;
+                    background-color: rgba(28, 121, 93, 0.781);
+                    width: 380px;
+                    height: 200px;
+                    margin: 4px;
+                }
+            }
+        }
+    }
+
+    .tituloServicios {
+        font-size: 1.3em;
+        margin-top: 50px;
+    }
+
+    .mainServicios {
+        margin: 20px;
+        grid-template-areas:
+            'carrusel carrusel';
+
+
+        .col {
+            display: none;
+        }
+
+        .botonServicios {
+            color: $color-casi-blanco;
+            background-color: $color-verde;
+            border: none;
+            font-size: 1.2em;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.315);
+        }
+
+        .carousel-item img {
+            height: 540px;
+            width: 800px;
+            object-fit: cover;
+        }
+
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}

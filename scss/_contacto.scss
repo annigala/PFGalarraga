@@ -1,0 +1,34 @@
+.titutloContacto{
+    text-align: center;
+    margin: 30px;
+    text-transform: uppercase;
+    color: $color-verde;
+    font-weight: bold;
+}
+
+.subtituloContacto{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 30px;
+    text-transform: uppercase;
+    color: $color-verde;
+}
+
+.formulario{
+    font-size: 1.4em;
+    margin: 30px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    .form-control,.form-select,.form-floating{
+        font-size: 1em;
+        margin: 10px;
+        text-align: center;
+        border-color: $color-verde;
+    }
+    .btn{
+        background-color: $color-verde;
+        border: none;
+        font-size: 1em;
+    }
+}

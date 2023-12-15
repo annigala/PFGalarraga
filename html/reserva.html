@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="COP Tranfers- ¿Tenés alguna duda? No te quedes con ella, consultá sin compromiso.">
+    <link rel="icon" href="../multimedia/logo-corto-flaticon.png" type="image/x-icon">
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>COP TRANSFERS|RESERVÁ</title>
+</head>
+
+<body>
+    <header>
+        <!-- bs navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logoNav navFlex" href="../index.html"><img src="../multimedia/logotipo.png"
+                        alt="Logo Cop Transfers"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><img src="../multimedia/logo-corto-flaticon.png"
+                            alt="logo menu"></span>
+                </button>
+                <div class="collapse navbar-collapse listaNav navFlex" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nuestraFlota.html">Flota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item reserva">
+                            <a class="nav-link" href="reserva.html">Reserva</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titutloContacto">Reserva tu auto</h1>
+        <h2 class="subtituloContacto">¡No te quedes sin tu auto! Reservalo, cotizá sin compromiso<br>Tu consulta no es
+            molestia</h2>
+        <form class="col g-3 mx-auto formulario">
+            <div class="col-md-3">
+                <label for="inputName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-3">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="abcde@">
+            </div>
+            <div class="col-md-3">
+                <label for="inputPhone4" class="form-label">Contacto</label>
+                <input type="number" class="form-control" id="inputPhone4" placeholder="1234-1234">
+            </div>
+            <div class="col-md-3">
+                <label for="inputAddress" class="form-label">Lugar de salida</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Av Libertador 300">
+            </div>
+            <div class="col-md-3">
+                <label for="inputAddress" class="form-label">Lugar de destino</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Av Libertador 300">
+            </div>
+            <div class="col-md-3">
+                <label for="inputState" class="form-label">Tipo de servicio</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Servicio</option>
+                    <option>Ejecutivo</option>
+                    <option>VANS</option>
+                    <option>City Tours</option>
+                    <option>VIP</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="inputState" class="form-label">Ciudad</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Ciudad</option>
+                    <option>GBA</option>
+                    <option>CABA</option>
+                    <option>Interior de Buenos Aires</option>
+                    <option>Provincia de Arg.</option>
+                </select>
+            </div>
+            <div class="form-floating col-md-3">
+                <label for="floatingTextarea2 form-floating"></label>
+                <textarea class="form-control" id="floatingTextarea2" style="height: 100px"
+                    placeholder="Dejanos tu comentario"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <!-- DIV FLEX -->
+        <div class="footerFlex">
+            <!-- logo -->
+            <div>
+                <img src="../multimedia/logo-corto.png" alt="Logo chico">
+            </div>
+
+            <div class="footerFlex">
+                <p>©Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <!-- JS BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var miCarrusel = new bootstrap.Carousel(document.getElementById('carouselExampleIndicators'));
+
+            miCarrusel._element.addEventListener('slide.bs.carousel', function (event) {
+                document.querySelectorAll('.botonServicios').forEach(function (boton) {
+                    boton.classList.remove('boton-activo');
+                });
+
+                var indiceImagenActiva = event.to;
+                document.getElementById('boton' + (indiceImagenActiva + 1)).classList.add('boton-activo');
+            });
+        });
+
+    </script>
+
+</body>

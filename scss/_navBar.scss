@@ -1,0 +1,41 @@
+.logoNav {
+    margin-left: 50px;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.navFlex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.listaNav ul li {
+    margin: 10px;
+    @include listas;
+
+    a {
+        @include anclas;
+        text-transform: uppercase;
+        font-size: 1.4em;
+        font-weight: bolder;
+
+        &:hover {
+            color: rgb(28, 121, 93);
+        }
+    }
+}
+
+.reserva {
+    background-color: $color-verde;
+    border-color: $color-verde;
+    border-radius: 8px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+
+    &:hover {
+        background-color: $color-casi-blanco;
+        border-color: $color-verde;
+    }
+}
