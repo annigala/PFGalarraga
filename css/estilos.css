@@ -330,7 +330,7 @@ header {
   }
   .logoNav {
     object-fit: fill;
-    width: 30%;
+    width: 40%;
   }
   .SpanSeccionTres h1 {
     font-weight: bold;
@@ -348,6 +348,15 @@ header {
   }
   .SpanSeccionTres button:hover {
     background-color: black;
+  }
+  .tituloFlota {
+    font-size: 1.1em;
+  }
+  .seccionFlota p {
+    padding: 10px;
+  }
+  .card {
+    width: min-content;
   }
   .serviciosMain div h3 {
     text-align: center;
